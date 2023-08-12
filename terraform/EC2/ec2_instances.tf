@@ -69,7 +69,7 @@ resource "aws_network_interface_sg_attachment" "jenkins_sg_attachment" {
   }
   provisioner "local-exec" { 
     
-    command = "sleep 1m"
+    command = "sleep 1m"  #until the instance ready before running the ansible playbook
   }
 }
 
